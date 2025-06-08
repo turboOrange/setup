@@ -91,4 +91,8 @@ echo "Enabling Flatpak integration..."
 sudo apt install -y flatpak gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+echo "install neovim"
+sudo add-apt-repository ppa:neovim-ppa/stable -y
+sudo apt install neovim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
 echo "Setup Complete!"
